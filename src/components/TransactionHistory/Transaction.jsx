@@ -1,7 +1,8 @@
+import { TableRowCell } from './Transaction.styled';
 export const Transaction = ({ type, amount, currency }) => (
   <tr>
-    <th>{type}</th>
-    <th>{amount}</th>
-    <th>{currency}</th>
+    <TableRowCell>{type}</TableRowCell>
+    <TableRowCell>{amount}</TableRowCell>
+    <TableRowCell>{currency}</TableRowCell>
   </tr>
 );
