@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { TableRowCell } from './Transaction.styled';
 export const Transaction = ({ type, amount, currency }) => (
   <tr>
@@ -6,3 +7,8 @@ export const Transaction = ({ type, amount, currency }) => (
     <TableRowCell>{currency}</TableRowCell>
   </tr>
 );
+Transaction.propTypes = {
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+};
