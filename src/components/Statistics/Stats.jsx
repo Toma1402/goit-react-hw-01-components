@@ -1,6 +1,7 @@
+import { ListItem } from './Stats.styled';
 export const Stats = ({ id, label, percentage }) => (
-  <li key={id}>
+  <ListItem key={id}>
     <span>{label}</span>
     <span>{percentage}%</span>
-  </li>
+  </ListItem>
 );

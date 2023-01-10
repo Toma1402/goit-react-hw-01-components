@@ -21,7 +21,7 @@ export const Tag = styled.p`
   color: grey;
   margin-bottom: 5px;
 `;
-export const ProfileInfo = styled.p`
+export const ProfileInfo = styled.div`
   margin-bottom: 5px;
 `;
 export const Location = styled.p`

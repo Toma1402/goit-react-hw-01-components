@@ -1,11 +1,12 @@
 import { Stats } from './Stats';
+import { StatisticsBlock, Title, List } from './Statistics.styled';
 export const Statistics = ({ stats }) => (
-  <div>
-    <h2>Upload Stats</h2>
-    <ul>
+  <StatisticsBlock>
+    <Title>Upload Stats</Title>
+    <List>
       {stats.map(stat => (
         <Stats key={stat.id} label={stat.label} percentage={stat.percentage} />
       ))}
-    </ul>
-  </div>
+    </List>
+  </StatisticsBlock>
 );
